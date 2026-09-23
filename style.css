@@ -7,6 +7,7 @@
 }
 
 body {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,24 +17,18 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 30px;
-  padding-bottom: 50px;
-  width: 962px;
-  height: 962px;
-  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 512px;
+  height: 512px;
+  flex-grow: 0;
 }
 
 .container > div {
-  height: 35px;
-  width: 35px;
+  height: 32px;
+  width: 32px;
   border: 1px solid black;
   flex-shrink: 0;
-}
-
-.container > div:nth-child(16n + 1) {
-  width: 100%;
-  height: 0;
-  border: 0;
 }
 
 button {

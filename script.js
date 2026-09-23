@@ -34,7 +34,7 @@ button.addEventListener("click", () => {
     }
     let new_boxes = document.querySelectorAll(".mini-div");
     for (const new_box of new_boxes) {
-      let new_val = 960 / promptUser;
+      let new_val = 512 / promptUser;
       new_box.style.width = new_val + "px";
       new_box.style.height = new_val + "px";
       new_box.addEventListener("mouseenter", () => {
