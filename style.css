@@ -8,21 +8,34 @@
 
 body {
   display: flex;
-  justify-content: center;
-  height: 100vh;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  width: 402px;
-  align-self: center;
-  padding-top: 70px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  width: 962px;
+  height: 962px;
+  justify-content: center;
 }
 
 .container > div {
-  height: 25px;
-  width: 25px;
-  border: 0.5px solid black;
+  height: 35px;
+  width: 35px;
+  border: 1px solid black;
+  flex-shrink: 0;
+}
+
+.container > div:nth-child(16n + 1) {
+  width: 100%;
+  height: 0;
+  border: 0;
+}
+
+button {
+  margin-top: 50px;
 }
