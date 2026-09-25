@@ -27,10 +27,11 @@ body {
 .container > div {
   height: 32px;
   width: 32px;
-  border: 1px solid black;
+  border: 0.5px solid black;
   flex-shrink: 0;
 }
 
 button {
   margin-top: 50px;
+  font-size: medium;
 }
