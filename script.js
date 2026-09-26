@@ -34,11 +34,13 @@ button.addEventListener("click", () => {
   } else {
     box.replaceChildren();
     createGrid(promptUser);
+
     const newBoxes = document.querySelectorAll(".mini-div");
     for (const newBox of newBoxes) {
       let new_val = 512 / promptUser;
       newBox.style.width = new_val + "px";
       newBox.style.height = new_val + "px";
+
       newBox.addEventListener("mouseenter", () => {
         newBox.style.backgroundColor = randomColor();
       });
